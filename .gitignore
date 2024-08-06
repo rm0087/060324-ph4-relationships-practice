@@ -53,3 +53,7 @@ jspm_packages
 *.db
 */*.db
 */*/*.db
+
+.env
+
+__pycache__/

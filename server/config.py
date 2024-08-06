@@ -5,10 +5,6 @@ from flask_migrate import Migrate
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
-from dotenv import load_dotenv
-from flask_bcrypt import Bcrypt
-
-load_dotenv()
 
 # APP CONFIGURATION
 
@@ -31,5 +27,3 @@ db = SQLAlchemy(metadata=metadata)
 migrate = Migrate(app, db)
 
 db.init_app(app)
-
-bcrypt = Bcrypt(app)
